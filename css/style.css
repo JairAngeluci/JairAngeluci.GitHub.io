@@ -7,9 +7,17 @@ a, p, h1, h2, h3, h4, h5, h6{
     color: #ffffff;
 }
 
-img{
+img.me{
     border-radius: 50%;
     align-content: center;
+    width: 10%;
+    height: 10%;
+}
+
+img.icon{
+    width: 3%;
+    height: 3%;
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
 }
 
 li{
