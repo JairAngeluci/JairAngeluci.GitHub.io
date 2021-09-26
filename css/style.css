@@ -19,6 +19,7 @@ img.me{
 img.icon{
     filter: opacity(0.5) drop-shadow(0 0 0 white);
     border-radius: 50%;
+    transition: 0.5s;
 }
 
 li{
