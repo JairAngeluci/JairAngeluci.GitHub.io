@@ -15,10 +15,9 @@
 			<input type="text" id="theirName" name="theirName"><br><br>
 			<button onclick="calcularAmor()">Calcular</button>
 		</div>
+		<div id="resultado"></div>
 	</body>
 </html>
-
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <script>
 	function calcularAmor(){
@@ -28,18 +27,16 @@
 		if (meuNome == '' || outroNome == '') {
 			alert("Você precisa preencher os dois nomes.");
 		} else {
-			if (document.getElementById("resultado") != null)
-				document.getElementById("resultado").remove();
+			if (document.getElementById("resultado").innerHTML != "")
+				document.getElementById("resultado").innerHTML = "";
 			
 			resultado = Math.floor(Math.random() * (100 - 85) ) + 85;
-			$("body").append(
-				"<div id=\"resultado\">"
-				+ "<h1 id=\"numeroResultado\">" + resultado + "% 😍</h1>"
+			document.getElementById("resultado").innerHTML =
+				"<h1 id=\"numeroResultado\">" + resultado + "% 😍</h1>"
 				+ "<p id=\"textoResultado\">Dada a opinião do algoritmo do amor, parece que um relacionamento entre as pessoas " + meuNome + " e " + outroNome + " tem uma boa chance de sucesso."
 				+ " No entanto, isso não significa que você não tenha que trabalhar duro."
 				+ " Lembre-se de que foco e dedicação são tão necessários em um relacionamento quanto o amor."
-				+ " Além disso, passar tempo juntos, comunicar-se e respeitar um ao outro são essenciais para manter o amor vivo.</p>"
-				+ "</div>");
+				+ " Além disso, passar tempo juntos, comunicar-se e respeitar um ao outro são essenciais para manter o amor vivo.</p>";
 		}
 	}
 </script>
