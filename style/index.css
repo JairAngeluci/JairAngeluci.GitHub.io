@@ -1,11 +1,11 @@
 :root {
 	--bg: #1A1A1E;
-	--bg-elev: #1b1d27;
+	--bg-elev: #29292D;
 	--text: #f1f1f4;
 	--text-muted: #9a9aa8;
-	--accent: #babae9;
-	--accent-soft: #29292D;
-	--glow: #ada2a2;
+	--accent: #ffffff;
+	--accent-soft: #3e3e44;
+	--glow: hsla(0, 0%, 100%, 0.644);
 
 	--font-display: "Fraunces", Georgia, serif;
 	--font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
